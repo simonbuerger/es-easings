@@ -1,8 +1,4 @@
-const fs = require('fs')
 const execSync = require('child_process').execSync
-const prettyBytes = require('pretty-bytes')
-const gzipSize = require('gzip-size')
-const pkg = require('../package.json')
 
 const exec = (command, extraEnv) =>
   execSync(command, {

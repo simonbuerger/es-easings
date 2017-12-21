@@ -12,6 +12,8 @@ const easeValue = easeInOutQuad(currentTime)
 const currentPosition = easeValue * (600 - 200) + 200
 ```
 
+## Installation
+`npm install es-easings`
 ## Available easing functions
 
 linear
