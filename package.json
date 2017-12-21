@@ -1,0 +1,41 @@
+{
+  "name": "es-easings",
+  "version": "1.0.0",
+  "description": "Lightweight as possible easing functions exported as commonjs and es modules",
+  "files": [
+    "easings",
+    "es",
+    "index.js"
+  ],
+  "main": "index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "node ./tools/build.js",
+    "watch": "babel ./modules -d . --ignore __tests__ --watch",
+    "prepublishOnly": "node ./tools/build.js"
+  },
+  "author": {
+    "name": "Simon Buerger",
+    "url": "https://twitter.com/simonbuerger"
+  },
+  "license": "MIT",
+  "issues": "http://github.com/simonbuerger/es-easings/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonbuerger/es-easings.git"
+  },
+  "keywords": [
+    "lightweight",
+    "easings",
+    "es",
+    "es6",
+    "modules"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-1": "^6.5.0"
+  }
+}
