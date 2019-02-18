@@ -1,6 +1,4 @@
 .DS_Store
 
-es
+dist
 node_modules
-/*.js
-/easings
